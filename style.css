@@ -512,7 +512,6 @@ footer p {
 }
 
 article {
-  display: flex;
   align-items: center;
   gap: 15px; /* Space between icon and text */
 }
