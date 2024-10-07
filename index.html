@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Yashodeep Mahajan</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id = hamburger-nav>
+    <div class="logo">Yashodeep Mahajan</div>
+    <div class="hamburger-menu">
+      <div class= "hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#certificates" onclick="toggleMenu()" >Certificates</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="assets\LinkedIn pic.jpg" alt="Yasho's profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Yashodeep Mahajan</h1>
+      <p class="section__text__p2">An Analyst and Technical Writer</p>
+      <div class="btn-container">
+        <button
+          class="btn btn-color-2"
+          onclick="window.open('assets/Technical Writer.pdf')"
+        >
+          Preview CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img
+          src="assets\linkedin.png"
+          alt="My LinkedIn profile"
+          class="icon"
+          onclick="location.href='https://www.linkedin.com/in/yashomahajan/'"
+        />
+        <img
+          src="assets/github.png"
+          alt="My Github profile"
+          class="icon"
+          onclick="location.href='https://https://github.com/Yashodeep-Mahajan'"/>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img
+              src="assets/experience.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <h3>Experience</h3>
+            <p>Technical Writing <br />Business Analysis</p>
+          </div>
+          <div class="details-container">
+            <img
+              src="assets/education.png"
+              alt="Education icon"
+              class="icon"
+            />
+            <h3>Education</h3>
+            <p> M.Sc. Business Analystics <br />B.E. Mechanical Engineering</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+          I am a detail-oriented individual with experience in fintech and energy sectors, specializing 
+          in data analysis, technical documentation, and process improvement. I have a proven track 
+          record in delivering data-driven insights, streamlining workflows, and creating comprehensive 
+          documentation. Proficient in Python, R Studio, Power BI, and SAP ERP, I am eager to leverage 
+          my skills in a dynamic environment that values innovation, aiming to contribute to data 
+          analytics and business process optimization.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img
+      src="assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#experience'"
+    />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1><br><br><br>
+
+    <!-- Technical Writer Experience -->
+    <div style="display: flex; align-items: center; margin-bottom: 30px;">
+        <img src="assets/ISG logo.jpg" alt="ISG Logo" width="150" height="150" style="margin-right: 40px;">
+        <div>
+            <h3>Technical Writer</h3>
+            <p><b>Insolutions Global – Mumbai, IN</b><br>
+                <b>09/2022 – 08/2023</b><br>
+                Created high-quality documentation, collaborated on product requirements, analyzed business data, identified risks, improved decision-making, and ensured quality adherence.
+            </p>
+        </div>
+    </div>
+
+    <!-- Documentation Engineer Experience -->
+    <div style="display: flex; align-items: center; margin-bottom: 30px;">
+        <img src="assets/Citec logo.png" alt="Citec Logo" width="150" height="150" style="margin-right: 40px;">
+        <div>
+            <h3>Documentation Engineer</h3>
+            <p><b>Citec Engineering India - Mumbai, IN</b><br>
+                <b>01/2020 - 09/2022</b><br>
+                Compiled and developed over 200 plant operation manuals, performed data migration, collaborated with teams, and ensured client alignment for Wärtsilä and ABB projects.
+            </p>
+        </div>
+    </div>
+  </section>
+
+  </section>
+  <section id="Skills">
+    <p class="section__text__p1">Look Into My</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Tools and Technology</h2>
+              <div class="article-container">
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                  <h3>Power BI</h3>
+                </article>
+        
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                  <h3>MySQL</h3>
+                </article>
+        
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                  <h3>Microsoft Office</h3>
+                </article>
+        
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                  <h3>Python</h3>
+                </article>
+                    
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                  <h3>XML</h3>
+                </article>
+        
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                  <h3>SAP ERP</h3>
+                </article>
+        
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                  <h3>SolidWorks</h3>
+                </article>
+        
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                  <h3>Document360</h3>
+                </article>
+        
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                  <h3>Jira</h3>
+                </article>
+        
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                  <h3>Arbortext Editor</h3>
+                </article>
+                
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                  <h3>CMS (Content Management System)</h3>
+                </article>
+                <article>
+                  <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                  <h3>R Studio</h3>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+
+
+        <div class="details-container">
+          <h2 class="experience-sub-title">Soft Skills</h2>
+          <div class="article-container">
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Documentation</h3>
+                
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Data visualization</h3>
+                
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Agile methodologies</h3>
+                
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Report writing</h3>
+                
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Stakeholder relationship management</h3>
+                
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Data modelling & Data cleaning</h3>
+                
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Cross-functional collaboration</h3>
+                
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Proofreading</h3> 
+                </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#projects'"
+    /><br>
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- Project 1 -->
+          <div class="details-container color-container">
+            <div class="btn-container">
+              <img
+                src="assets\Healthcare.jpg"
+                alt="Healthcare Workflow Optimization Project"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Healthcare Workflow Optimization Project</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Yashodeep-Mahajan/Healthcare-Project-Workflow-Optimization'">
+                Github
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="details-container color-container">
+            <div class="btn-container">
+              <img
+                src="assets\Data centers.jpg"
+                alt="Data Centers Responsible for Climate Change"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Data Centers Responsible for Climate Change</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Yashodeep-Mahajan/Data-Centers-Responsible-for-Climate-Change'">
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        
+      </div>
+    </div>
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#contact'"
+    />
+  </section>
+  <section id="certificates">
+    <p class="section__text__p1">My Achievements</p>
+    <h1 class="title">Certificates</h1>
+    <div class="certificates-container">
+      
+      <div class="certificate-card">
+        <img src="assets\Data Analytics and Visualization Job Certification_page.jpg" alt="Certificate 3" class="certificate-image" />
+        <div class="certificate-info">
+          <h2>Data Analytics and Visualization Job Certification</h2>
+          </div>
+      </div>
+      <div class="certificate-card">
+        <img src="assets\Data Camp - Intermediate Regression in R_page.jpg" alt="Certificate 3" class="certificate-image" />
+        <div class="certificate-info">
+          <h2>Data Camp - Intermediate Regression in R</h2>
+          
+        </div>
+      </div>
+      <div class="certificate-card">
+        <img src="assets\Data Camp - Introduction to Data Visualization with ggplot2_page.jpg" alt="Certificate 3" class="certificate-image" />
+        <div class="certificate-info">
+          <h2>Data Camp - Introduction to Data Visualization with ggplot2</h2>
+          
+        </div>
+      </div>
+      <div class="certificate-card">
+        <img src="assets\Data Camp - Introduction to Regression in R_page.jpg" alt="Certificate 3" class="certificate-image" />
+        <div class="certificate-info">
+          <h2>Data Camp - Introduction to Regression in R</h2>
+          
+        </div>
+      </div><div class="certificate-card">
+        <img src="assets\Data Camp Certificate - Introduction to R_page.jpg" alt="Certificate 3" class="certificate-image" />
+        <div class="certificate-info">
+          <h2>Data Camp Certificate - Introduction to R</h2>
+          
+        </div>
+      </div><div class="certificate-card">
+        <img src="assets\Data camp Data Manipulation with dplyr_page.jpg" alt="Certificate 3" class="certificate-image" />
+        <div class="certificate-info">
+          <h2>Data camp Data Manipulation with dplyr</h2>
+          
+        </div>
+      </div><div class="certificate-card">
+        <img src="assets\Data Camp Introduction to the Tidyverse_page.jpg" alt="Certificate 3" class="certificate-image" />
+        <div class="certificate-info">
+          <h2>Data Camp Introduction to the Tidyverse</h2>
+          
+        </div>
+      </div><div class="certificate-card">
+        <img src="assets\Power BI Job Simulation_page.jpg" alt="Certificate 3" class="certificate-image" />
+        <div class="certificate-info">
+          <h2>Power BI Job Simulation</h2>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img
+          src="./assets/email.png"
+          alt="Email icon"
+          class="icon contact-icon email-icon"
+        />
+        <p><a href="mailto:yasho.mahajan@gmail.com">yasho.mahajan@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img
+          src="./assets/linkedin.png"
+          alt="LinkedIn icon"
+          class="icon contact-icon"
+        />
+        <p><a href="https://www.linkedin.com/in/yashomahajan/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024 Yashodeep Mahajan. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
