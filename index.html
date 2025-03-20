@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" type="image/x-icon" href="./assets/Logo.png" > <!-- ICO Favicon -->
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><img src="./assets/Logo.png" onclick= "location.href='#about'"/></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#Blogs">Blogs</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Yashodeep Mahajan</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#Blogs" onclick="toggleMenu()">Blogs</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#certificates" onclick="toggleMenu()">Certificates</a></li>
+          <li><a href="#publications" onclick="toggleMenu()">Publications</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="profile__pic-container">
+        <img src="./assets/DP.jpg" alt="Yashodeep Mahajan profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Yashodeep Mahajan</h1>
+        <p class="section__text__p2">A Technical Writer and an Analyst</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Technical_Writer_2025.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/yashomahajan/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Yashodeep-Mahajan'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/second.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>4 years <br />Technical Writing and Data Analysis</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>M.Sc. Business Analystics <br /> (2024) <br />B.E. Mechanical Engineering <br /> (2019)</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+            I am a detail-oriented professional with experience in fintech and energy sectors, specializing in technical writing, documentation, and process optimization. With a strong background in creating clear, structured, and comprehensive documentation, I excel at translating complex technical concepts into user-friendly materials. My expertise includes drafting manuals, process guides, and data-driven reports that enhance efficiency and knowledge transfer. I am eager to apply my skills in a dynamic environment that values precision, clarity and innovation.</p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+     </section>
+<hr>
+  <section id="experience">
+    <p class="section__text__p1">Here's My</p>
+    <h1 class="title">Experience</h1><br><br><br>
+
+    <!-- Technical Writer Experience -->
+    <div style="display: flex; align-items: center; margin-bottom: 30px;">
+        <img src="assets/ISG logo.jpg" alt="ISG Logo" width="150" height="150" style="margin-right: 40px;">
+        <div>
+            <h3>Technical Writer</h3>
+            <p><b>Insolutions Global – Mumbai, IN</b><br>
+                <b>09/2022 – 08/2023</b><br>
+                Created high-quality documentation, collaborated on product requirements, analyzed business data, improved decision-making, and ensured quality adherence.            </p>
+        </div>
+    </div>
+
+    <!-- Documentation Engineer Experience -->
+    <div style="display: flex; align-items: center; margin-bottom: 30px;">
+        <img src="assets/Citec logo.png" alt="Citec Logo" width="150" height="150" style="margin-right: 40px;">
+        <div>
+            <h3>Documentation Engineer</h3>
+            <p><b>Citec Engineering India (Now Cyient) - Mumbai, IN</b><br>
+                <b>01/2020 - 09/2022</b><br>
+                Compiled and developed over 200 plant operation manuals, performed data migration, collaborated with teams, and ensured client alignment for Wärtsilä and ABB projects.
+            </p>
+        </div>
+    </div>
+    <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#Blogs'"
+      />
+  </section>
+<hr>
+<!-- Blogs start -->
+    
+<section id="Blogs">
+  <p class="section__text__p1">Check out My</p>
+  <h1 class="title">Blogs</h1>
+  <div class="blog-container">
+    <div class="blog-card">
+      <img src="Blogs/Assets/Alien.png" alt="Blog 1" class="blog-image">
+      <div class="blog-info">
+        <h2>Are We Alone? The Hunt for Alien Civilizations</h2>
+        <p>Are we alone, or just one missed call away from the most epic group chat in the universe? </p>
+        <a href="Blogs/Astrophysics/Blog 1.html" class="btn btn-view-blog">Read More</a>
+      </div>
+    </div>
+    <div class="blog-card">
+      <img src="Blogs/Assets/Neutron star.png" alt="Blog 2" class="blog-image">
+      <div class="blog-info">
+        <h2>Neutron Stars: The Universe’s Heavyweight Champions</h2>
+        <p>Neutron stars are the universe's ultimate heavyweights—tiny, ultra-dense, and packed with mind-blowing physics.</p>
+        <a href="Blogs/Astrophysics/Blog 2.html" class="btn btn-view-blog">Read More</a>
+      </div>
+    </div>
+    <div class="blog-card">
+      <img src="Blogs/Assets/Keplar.jpg" alt="Blog 3" class="blog-image">
+      <div class="blog-info">
+        <h2>The Kepler Planets: Our Cosmic Blind Date with Alien Worlds</h2>
+        <p>Kepler's cosmic matchmaking revealed a galaxy full of quirky, potentially habitable exoplanets, changing our understanding of life beyond Earth.</p>
+        <a href="Blogs/Astrophysics/Blog 3.html" class="btn btn-view-blog">Read More</a>
+      </div>
+    </div>
+    <div class="blog-card">
+      <img src="Blogs/Assets/Time.jpg" alt="Blog 8" class="blog-image">
+      <div class="blog-info">
+        <h2>The Philosophy of Time</h2>
+        <p>Is time a cosmic reality, a human illusion, or just a fancy way of measuring how late we are?</p>
+        <a href="Blogs/Philosophy/Blog 3.html" class="btn btn-view-blog">Read More</a>
+      </div>
+    </div>
+    <div class="blog-card">
+      <img src="Blogs/Assets/Blackhole.jpeg" alt="Blog 4" class="blog-image">
+      <div class="blog-info">
+        <h2>Black Holes and Time Dilation: The Universe’s Weirdest Time Machines</h2>
+        <p>Black holes are the universe's ultimate time machines, where gravity warps time, making hours feel like years and offering a mind-bending view of the cosmos.</p>
+        <a href="Blogs/Astrophysics/Blog 4.html" class="btn btn-view-blog">Read More</a>
+      </div>
+    </div>
+    
+    <div class="blog-card">
+      <img src="Blogs/Assets/Free will.jpeg" alt="Blog 6" class="blog-image">
+      <div class="blog-info">
+        <h2>The Philosophy of Free Will</h2>
+        <p>Are you truly in control of your choices, or just following a script written by the universe?</p>
+        <a href="Blogs/Philosophy/Blog 1.html" class="btn btn-view-blog">Read More</a>
+      </div>
+    </div>
+    <div class="blog-card">
+      <img src="Blogs/Assets/Dark matter.jpeg" alt="Blog 5" class="blog-image">
+      <div class="blog-info">
+        <h2>What Is Dark Matter?</h2>
+        <p>Dark matter is an invisible substance that makes up 85% of the universe's matter, influencing galaxy movement and structure through its gravitational effects, yet remains undetectable by traditional means.</p>
+        <a href="Blogs/Astrophysics/Blog 5.html" class="btn btn-view-blog">Read More</a>
+      </div>
+    </div>
+    <div class="blog-card">
+      <img src="Blogs/Assets/Religion.jpg" alt="Blog 7" class="blog-image">
+      <div class="blog-info">
+        <h2>The Philosophy of Religion</h2>
+        <p>Is religion a divine truth, a human construct, or just our minds searching for meaning in the unknown?</p>
+        <a href="Blogs/Philosophy/Blog 2.html" class="btn btn-view-blog">Read More</a>
+      </div>
+    </div>
+    
+  </div>
+  <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
+</section>
+
+<!-- Blogs end -->
+<hr>
+
+  <!-- SKILLS SECTION -->
+<section id="skills">
+  <p class="section__text__p1">Explore My</p>
+  <h1 class="title">Skills</h1>
+  <div class="skills-details-container">
+    <div class="about-containers">
+      
+      <!-- Tools and Technology Section -->
+      <div class="details-container">
+        <h2 class="skills-sub-title">Tools and Technology</h2>
+        <div class="article-container">
+          <article>
+            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+            <h3>Python</h3>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+            <h3>XML</h3>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+            <h3>Document360</h3>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+            <h3>Arbortext Editor</h3>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+            <h3>Jira</h3>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+            <h3>Confluence</h3>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+            <h3>CMS (Content Management System)</h3>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+            <h3>Power BI</h3>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+            <h3>MySQL</h3>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+            <h3>MS Office</h3>
+          </article>
+          
+        </div>
+      </div>
+
+      <!-- Soft Skills Section -->
+      <div class="details-container">
+        <h2 class="skills-sub-title">Other Skills</h2>
+        <div class="article-container">
+          <article>
+            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+            <h3>Documentation</h3>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+            <h3>Data Visualization</h3>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+            <h3>Agile Methodologies</h3>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+            <h3>Report Writing</h3>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+            <h3>Stakeholder Relationship Management</h3>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+            <h3>Data Modeling & Data Cleaning</h3>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+            <h3>Cross-Functional Collaboration</h3>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Skill icon" class="icon" />
+            <h3>Proofreading</h3>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+</section>
+
+
+<hr>
+  <!-- PROJECTS SECTION -->
+<section id="projects">
+  <p class="section__text__p1">Browse My Recent</p>
+  <h1 class="title">Projects</h1>
+  
+  <div class="projects-details-container">
+    <div class="about-containers">
+      
+      <!-- Project 1 -->
+      <div class="details-container color-container">
+        <div class="btn-container">
+          <img
+            src="assets/Healthcare.jpg"
+            alt="Healthcare Workflow Optimization Project"
+            class="project-img"
+          />
+        </div>
+        <h2 class="project-title">Healthcare Workflow Optimization Project</h2>
+        <p>A cloud-based healthcare diagnostic platform leveraging Google Cloud technologies to optimize patient data analysis for faster and more accurate diagnoses.</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/Yashodeep-Mahajan/Healthcare-Project-Workflow-Optimization'">
+            Github
+          </button>
+        </div>  
+      </div>
+
+      <!-- Project 2 -->
+      <div class="details-container color-container">
+        <div class="btn-container">
+          <img
+            src="assets/Data centers.jpg"
+            alt="Data Centers Responsible for Climate Change"
+            class="project-img"
+          />
+        </div>
+        <h2 class="project-title">Data Centers Responsible for Climate Change</h2>
+        <p>Analyzed the environmental impact of data centers by processing energy consumption and carbon emissions data, using Power BI to create interactive dashboards showcasing the correlation with climate change.</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://github.com/Yashodeep-Mahajan/Data-Centers-Responsible-for-Climate-Change'">
+            Github
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#certificates'"
+  />
+</section>
+<hr>
+    <!-- Certification start -->
+ 
+<section id="certificates">
+  <p class="section__text__p1">My Achievements</p>
+  <h1 class="title">Certificates</h1>
+  <div class="certificates-container">
+    
+    <div class="certificate-card">
+      <img src="assets/Data Analytics and Visualization Job Certification_page.jpg" alt="Data Analytics Certificate" class="certificate-image">
+      <div class="certificate-info">
+        <h2>Data Analytics and Visualization Job Certification</h2>
+        <a href="assets/Data Analytics and Visualization Job Certification_page.jpg" target="_blank" class="btn btn-view-certificate">View</a>
+      </div>
+    </div>
+
+    <div class="certificate-card">
+      <img src="assets/Data Camp - Intermediate Regression in R_page.jpg" alt="Intermediate Regression in R" class="certificate-image">
+      <div class="certificate-info">
+        <h2>Data Camp - Intermediate Regression in R</h2>
+        <a href="assets/Data Camp - Intermediate Regression in R_page.jpg" target="_blank" class="btn btn-view-certificate">View</a>
+      </div>
+    </div>
+
+    <div class="certificate-card">
+      <img src="assets/Data Camp - Introduction to Data Visualization with ggplot2_page.jpg" alt="Data Visualization with ggplot2" class="certificate-image">
+      <div class="certificate-info">
+        <h2>Data Camp - Introduction to Data Visualization with ggplot2</h2>
+        <a href="assets/Data Camp - Introduction to Data Visualization with ggplot2_page.jpg" target="_blank" class="btn btn-view-certificate">View</a>
+      </div>
+    </div>
+
+    <div class="certificate-card">
+      <img src="assets/Data Camp - Introduction to Regression in R_page.jpg" alt="Introduction to Regression in R" class="certificate-image">
+      <div class="certificate-info">
+        <h2>Data Camp - Introduction to Regression in R</h2>
+        <a href="assets/Data Camp - Introduction to Regression in R_page.jpg" target="_blank" class="btn btn-view-certificate">View</a>
+      </div>
+    </div>
+
+    <div class="certificate-card">
+      <img src="assets/Data Camp Certificate - Introduction to R_page.jpg" alt="Introduction to R" class="certificate-image">
+      <div class="certificate-info">
+        <h2>Data Camp - Introduction to R</h2>
+        <a href="assets/Data Camp Certificate - Introduction to R_page.jpg" target="_blank" class="btn btn-view-certificate">View</a>
+      </div>
+    </div>
+
+    <div class="certificate-card">
+      <img src="assets/Data camp Data Manipulation with dplyr_page.jpg" alt="Data Manipulation with dplyr" class="certificate-image">
+      <div class="certificate-info">
+        <h2>Data Camp - Data Manipulation with dplyr</h2>
+        <a href="assets/Data camp Data Manipulation with dplyr_page.jpg" target="_blank" class="btn btn-view-certificate">View</a>
+      </div>
+    </div>
+
+    <div class="certificate-card">
+      <img src="assets/Data Camp Introduction to the Tidyverse_page.jpg" alt="Introduction to the Tidyverse" class="certificate-image">
+      <div class="certificate-info">
+        <h2>Data Camp - Introduction to the Tidyverse</h2>
+        <a href="assets/Data Camp Introduction to the Tidyverse_page.jpg" target="_blank" class="btn btn-view-certificate">View</a>
+      </div>
+    </div>
+
+    <div class="certificate-card">
+      <img src="assets/Power BI Job Simulation_page.jpg" alt="Power BI Job Simulation" class="certificate-image">
+      <div class="certificate-info">
+        <h2>Power BI Job Simulation</h2>
+        <a href="assets/Power BI Job Simulation_page.jpg" target="_blank" class="btn btn-view-certificate">View</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+  <br><br><br>
+<hr>
+  <!-- Publications Section -->
+<section id="publications">
+  <p class="section__text__p1">My Research</p>
+  <h1 class="title">Publications</h1>
+  <div class="publications-container">
+    
+    <div class="publication-card">
+      <img src="assets/IJSER.png" alt="Publication 1" class="publication-image">
+      <div class="publication-info">
+        <h2>Latent Cooling System</h2>
+        <p>International Journal of Scientific and Engineering Research</p>
+        <a href="https://www.ijser.org/researchpaper/Solar-Thermal-Air-Conditioner-Part-I-Latent-Cooling-System.pdf" target="_blank" class="btn btn-view-publication">View</a>
+      </div>
+    </div>
+
+    <div class="publication-card">
+      <img src="assets/JETIR.png" alt="Publication 2" class="publication-image">
+      <div class="publication-info">
+        <h2>Solar Thermal AC</h2>
+        <p>Journal of Emerging Technologies and Innovative Research</p>
+        <a href="https://www.jetir.org/papers/JETIRAS06013.pdf" target="_blank" class="btn btn-view-publication">View</a>
+      </div>
+    </div>
+  </div>
+  
+  <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#contact'"
+  />
+</section>
+
+  </div>
+  
+
+<!-- Contact -->
+<hr>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:yasho.mahajan@gmail.com">yasho.mahajan@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/yashomahajan/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#Blogs" onclick="toggleMenu()">Blogs</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#certificates" onclick="toggleMenu()">Certificates</a></li>
+            <li><a href="#publications" onclick="toggleMenu()">Publications</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li> 
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Yashodeep Mahajan. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
