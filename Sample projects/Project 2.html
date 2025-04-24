@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Gateway API Documentation</title>
+    <link rel="stylesheet" href="Project 2.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="#overview">Overview</a>
+      <a href="#auth">Authentication</a>
+      <a href="#create-payment">Create Payment</a>
+      <a href="#webhooks">Webhooks</a>
+    </nav>
+    <div class="main">
+      <header>
+        <h1>Payment Gateway API Documentation</h1>
+        <p>Your guide to integrating secure and seamless payments</p>
+      </header>
+      <div class="container">
+        <section id="overview">
+          <h2>Overview</h2>
+          <p>
+            Our Payment Gateway API allows developers to securely process
+            payments using a simple RESTful interface.
+          </p>
+        </section>
+
+        <section id="auth">
+          <h2>Authentication</h2>
+          <p>
+            All requests must be authenticated using an API key in the
+            <code>Authorization</code> header:
+          </p>
+          <pre><code>Authorization: Bearer YOUR_API_KEY</code></pre>
+        </section>
+
+        <section id="create-payment">
+          <h2>Create a Payment</h2>
+          <p>Endpoint: <code>POST /v1/payments</code></p>
+
+          <h3>Request Parameters</h3>
+          <table>
+            <tr>
+              <th>Parameter</th>
+              <th>Type</th>
+              <th>Required</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>amount</td>
+              <td>integer</td>
+              <td>Yes</td>
+              <td>Amount in cents (e.g. 5000 for $50.00)</td>
+            </tr>
+            <tr>
+              <td>currency</td>
+              <td>string</td>
+              <td>Yes</td>
+              <td>Three-letter ISO currency code (e.g., usd)</td>
+            </tr>
+            <tr>
+              <td>source</td>
+              <td>string</td>
+              <td>Yes</td>
+              <td>Payment source token (e.g., a card token)</td>
+            </tr>
+            <tr>
+              <td>description</td>
+              <td>string</td>
+              <td>No</td>
+              <td>Optional description of the payment</td>
+            </tr>
+          </table>
+
+          <h3>Sample Request</h3>
+          <pre><code>curl -X POST https://api.paymentgateway.com/v1/payments \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+        "amount": 5000,
+        "currency": "usd",
+        "source": "tok_visa",
+        "description": "Test payment"
+      }'</code></pre>
+
+          <h3>Sample Response</h3>
+          <pre><code>{
+  "id": "pay_1A2b3C4d5E",
+  "amount": 5000,
+  "currency": "usd",
+  "status": "succeeded",
+  "created": 1679876543,
+  "description": "Test payment"
+}</code></pre>
+
+          <h3>Error Responses</h3>
+          <table>
+            <tr>
+              <th>Status Code</th>
+              <th>Error</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>400</td>
+              <td>invalid_request</td>
+              <td>Missing or invalid parameters.</td>
+            </tr>
+            <tr>
+              <td>401</td>
+              <td>unauthorized</td>
+              <td>Invalid API key.</td>
+            </tr>
+            <tr>
+              <td>402</td>
+              <td>payment_failed</td>
+              <td>Payment could not be processed.</td>
+            </tr>
+            <tr>
+              <td>500</td>
+              <td>server_error</td>
+              <td>Internal server error. Try again later.</td>
+            </tr>
+          </table>
+        </section>
+
+        <section id="webhooks">
+          <h2>Webhooks</h2>
+          <p>
+            Webhooks notify your server when events occur. You can configure
+            endpoints in your dashboard.
+          </p>
+          <h3>Sample Event Payload</h3>
+          <pre><code>{
+  "id": "evt_1A2b3C4d5E",
+  "type": "payment.succeeded",
+  "data": {
+    "object": {
+      "id": "ch_1A2b3C4d5E",
+      "amount": 5000,
+      "currency": "usd",
+      "status": "succeeded"
+    }
+  }
+}</code></pre>
+        </section>
+      </div>
+      <footer>&copy; 2025 PaymentGateway Inc. All rights reserved.</footer>
+    </div>
+  </body>
+</html>
