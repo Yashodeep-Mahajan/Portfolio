@@ -16,7 +16,7 @@
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
-          <li><a href="#Blogs">Blogs</a></li>
+          <li><a href="#documentation">Sample Documentation</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#certificates">Certificates</a></li>
@@ -36,7 +36,7 @@
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#Blogs" onclick="toggleMenu()">Blogs</a></li>
+          <li><a href="#documentation" onclick="toggleMenu()">Sample Documentation</a></li>
           <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#certificates" onclick="toggleMenu()">Certificates</a></li>
@@ -157,12 +157,12 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#Blogs'"
+        onclick="location.href='./#Sample Documentation'"
       />
   </section>
 <hr>
 <!-- Blogs start -->
-    
+<!--     
 <section id="Blogs">
   <p class="section__text__p1">Check out My</p>
   <h1 class="title">Blogs</h1>
@@ -240,9 +240,160 @@
         class="icon arrow"
         onclick="location.href='./#skills'"
       />
+</section> -->
+<!-- Blogs end -->
+
+<!-- DOCUMENTATION SECTION -->
+<section id="documentation">
+  <p class="section__text__p1">Explore My</p>
+  <h1 class="title">Sample Documentation</h1>
+
+  <!-- Tabs for documentation categories -->
+  <div class="tab-container">
+    <button class="tab-button" onclick="showTab('blogs')">Blogs</button>
+    <button class="tab-button" onclick="showTab('api')">API Documentation</button>
+    <button class="tab-button" onclick="showTab('guides')">How-to Guide</button>
+    <button class="tab-button" onclick="showTab('service')">Service Manual</button>
+    <button class="tab-button" onclick="showTab('user')">User Manual</button>
+    <button class="tab-button" onclick="showTab('sop')">SOP</button>
+  </div>
+
+  <!-- Documentation Tabs Content -->
+   <!-- Blogs start -->
+   <div class="tab-content" id="blogs" style="display:none">
+    <div class="blog-container">
+      <div class="blog-card">
+        <img src="Blogs/Assets/Alien.png" alt="Blog 1" class="blog-image">
+        <div class="blog-info">
+          <h2>Are We Alone? The Hunt for Alien Civilizations</h2>
+          <p>Are we alone, or just one missed call away from the most epic group chat in the universe?</p>
+          <a href="Blogs/Astrophysics/Blog 1.html" class="btn btn-view-blog">Read More</a>
+        </div>
+      </div>
+      <div class="blog-card">
+        <img src="Blogs/Assets/Neutron star.png" alt="Blog 2" class="blog-image">
+        <div class="blog-info">
+          <h2>Neutron Stars: The Universe’s Heavyweight Champions</h2>
+          <p>Neutron stars are the universe's ultimate heavyweights—tiny, ultra-dense, and packed with mind-blowing physics.</p>
+          <a href="Blogs/Astrophysics/Blog 2.html" class="btn btn-view-blog">Read More</a>
+        </div>
+      </div>
+      <div class="blog-card">
+        <img src="Blogs/Assets/Keplar.jpg" alt="Blog 3" class="blog-image">
+        <div class="blog-info">
+          <h2>The Kepler Planets: Our Cosmic Blind Date with Alien Worlds</h2>
+          <p>Kepler's cosmic matchmaking revealed a galaxy full of quirky, potentially habitable exoplanets.</p>
+          <a href="Blogs/Astrophysics/Blog 3.html" class="btn btn-view-blog">Read More</a>
+        </div>
+      </div>
+      <div class="blog-card">
+        <img src="Blogs/Assets/Time.jpg" alt="Blog 8" class="blog-image">
+        <div class="blog-info">
+          <h2>The Philosophy of Time</h2>
+          <p>Is time a cosmic reality, a human illusion, or just a fancy way of measuring how late we are?</p>
+          <a href="Blogs/Philosophy/Blog 3.html" class="btn btn-view-blog">Read More</a>
+        </div>
+      </div>
+      <div class="blog-card">
+        <img src="Blogs/Assets/Blackhole.jpeg" alt="Blog 4" class="blog-image">
+        <div class="blog-info">
+          <h2>Black Holes and Time Dilation</h2>
+          <p>Black holes are the universe's ultimate time machines, where gravity warps time.</p>
+          <a href="Blogs/Astrophysics/Blog 4.html" class="btn btn-view-blog">Read More</a>
+        </div>
+      </div>
+      <div class="blog-card">
+        <img src="Blogs/Assets/Free will.jpeg" alt="Blog 6" class="blog-image">
+        <div class="blog-info">
+          <h2>The Philosophy of Free Will</h2>
+          <p>Are you truly in control of your choices, or just following a script written by the universe?</p>
+          <a href="Blogs/Philosophy/Blog 1.html" class="btn btn-view-blog">Read More</a>
+        </div>
+      </div>
+      <div class="blog-card">
+        <img src="Blogs/Assets/Dark matter.jpeg" alt="Blog 5" class="blog-image">
+        <div class="blog-info">
+          <h2>What Is Dark Matter?</h2>
+          <p>Dark matter makes up 85% of the universe's matter but remains invisible to detection.</p>
+          <a href="Blogs/Astrophysics/Blog 5.html" class="btn btn-view-blog">Read More</a>
+        </div>
+      </div>
+      <div class="blog-card">
+        <img src="Blogs/Assets/Religion.jpg" alt="Blog 7" class="blog-image">
+        <div class="blog-info">
+          <h2>The Philosophy of Religion</h2>
+          <p>Is religion a divine truth, a human construct, or just a search for cosmic meaning?</p>
+          <a href="Blogs/Philosophy/Blog 2.html" class="btn btn-view-blog">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Blogs end -->
+  <div class="tab-content" id="api" style="display:none">
+    <div class="details-container color-container">
+      <img src="Sample projects/Assets/Payment Gateway.jpg" alt="Blog 7" class="blog-image">
+      <h2 class="project-title">API Documentation: Payment Gateway Sample</h2>
+      <p>This API documentation provides developers with clear and concise guidance on integrating a secure and seamless payment solution. It covers essential endpoints such as authentication, payment creation, and webhook configuration. With structured request/response examples, parameter tables, and error handling details, developers can quickly build and test payment functionality in their applications.</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" onclick="location.href='Sample projects/Project 2.html'">Visit Page</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-content" id="guides" style="display:none">
+    <div class="details-container color-container">
+      <img src="Sample projects/Assets/Wifi Security.jpg" alt="Blog 7" class="blog-image">
+      <h2 class="project-title">How-to Guide: How to Secure Your Wi-Fi Network</h2>
+      <p>This practical guide walks users through essential steps to protect their home Wi-Fi network from unauthorized access and cyber threats. Covering topics like changing default credentials, enabling encryption, disabling insecure features, and updating firmware, the page provides a clear, beginner-friendly roadmap to boost network security and ensure safe internet usage.</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" onclick="location.href='Sample projects/Project 1.html'">View Guide</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-content" id="service" style="display:none">
+    <div class="details-container color-container">
+      <img src="Sample projects/Assets/Instruction manual.jpg" alt="Blog 7" class="blog-image">
+      <h2 class="project-title">Service Manual</h2>
+      <p>This comprehensive service manual for the W220SG engine provides detailed technical insights, operational guidance, and maintenance procedures. It includes illustrated diagrams, specifications, troubleshooting steps, torque settings, and instructions for hydraulic tool usage—making it an essential reference for technicians involved in servicing, overhauling, or installing gas-powered industrial engines.</p>
+      <div class="btn-container">
+        <!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://example.com/hvac-service-manual'">View Manual</button> -->
+        <button class="btn btn-color-2 project-btn" onclick="window.open('Sample projects/Assets/Sample Service Manual 220SG.pdf')"> View Manual </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-content" id="user" style="display:none">
+    <div class="details-container color-container">
+      <img src="Sample projects/Assets/User manual.png" alt="Blog 7" class="blog-image">
+      <h2 class="project-title">User Manual for GPS device</h2>
+      <p>This user manual provides step-by-step guidance for operating the Quasar Log Book device, helping users record travel data for tax purposes. It covers installation, usage, syncing data, managing trip logs, and generating reports—ensuring compliance with SARS regulations and simplifying mileage tracking for business and personal vehicle use.</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" onclick="window.open('Sample projects/Assets/Sample User Manual.pdf')"> View Manual </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="tab-content" id="sop" style="display:none">
+    <div class="details-container color-container">
+      <img src="Sample projects/Assets/SOP.jpg" alt="Blog 7" class="blog-image">
+      <h2 class="project-title">SOP: Data Center Physical Security</h2>
+      <p>This SOP outlines standardized procedures for securing data centers, covering access control, surveillance, visitor management, and emergency response. It defines roles, enforces compliance, and ensures safety of critical infrastructure. Designed to align with ISO and NIST standards, it helps organizations maintain operational security and prevent unauthorized physical access.</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" onclick="window.open('Sample projects/Assets/Sample SOP.pdf')"> View SOP </button>
+      </div>
+    </div>
+  </div>
+
+  <img
+    src="./assets/arrow.png"
+    alt="Arrow icon"
+    class="icon arrow"
+    onclick="location.href='./#contact'"
+  />
 </section>
 
-<!-- Blogs end -->
+<!-- Documentation ends -->
 <hr>
 
   <!-- SKILLS SECTION -->
@@ -419,7 +570,7 @@
         <a href="assets/Data Analytics and Visualization Job Certification_page.jpg" target="_blank" class="btn btn-view-certificate">View</a>
       </div>
     </div>
-    
+
     <div class="certificate-card">
       <img src="assets/Data Camp - Intermediate Regression in R_page.jpg" alt="Intermediate Regression in R" class="certificate-image">
       <div class="certificate-info">
@@ -435,15 +586,7 @@
         <a href="assets/Data Camp - Introduction to Data Visualization with ggplot2_page.jpg" target="_blank" class="btn btn-view-certificate">View</a>
       </div>
     </div>
-    
-    <div class="certificate-card">
-      <img src="assets/Technical Writing Cert JPG.jpg" alt="Technical Writing Cert" class="certificate-image">
-      <div class="certificate-info">
-        <h2>Technical Writing: How to Write API Software Documentation</h2>
-        <a href="assets/Technical Writing Cert JPG.jpg" target="_blank" class="btn btn-view-certificate">View</a>
-      </div>
-    </div>
-    
+
     <div class="certificate-card">
       <img src="assets/Data Camp - Introduction to Regression in R_page.jpg" alt="Introduction to Regression in R" class="certificate-image">
       <div class="certificate-info">
@@ -557,7 +700,7 @@
             
             <li><a href="#about" onclick="toggleMenu()">About</a></li>
             <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-            <li><a href="#Blogs" onclick="toggleMenu()">Blogs</a></li>
+            <li><a href="#documentation" onclick="toggleMenu()">Sample Documentation</a></li>
             <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
             <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
             <li><a href="#certificates" onclick="toggleMenu()">Certificates</a></li>
