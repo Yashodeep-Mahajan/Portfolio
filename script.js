@@ -18,3 +18,36 @@ function toggleCategoryContent(category) {
     arrow.textContent = "▼";
   }
 }
+
+// function showTab(tabId) {
+//   const contents = document.querySelectorAll(".tab-content");
+//   contents.forEach((content) => {
+//     content.style.display = "none";
+//     content.style.marginTop = "0";
+//   });
+//   const activeTab = document.getElementById(tabId);
+//   if (activeTab) {
+//     activeTab.style.display = "block";
+//     activeTab.style.marginTop = "2rem";
+//   }
+// }
+
+function showTab(tabId) {
+  const contents = document.querySelectorAll(".tab-content");
+  contents.forEach((content) => {
+    content.style.display = "none";
+    content.style.marginTop = "0";
+  });
+
+  const activeTab = document.getElementById(tabId);
+  if (activeTab) {
+    activeTab.style.display = "block";
+    activeTab.style.marginTop = "2rem";
+  }
+
+  // Add expand class to documentation section
+  const docSection = document.getElementById("documentation");
+  if (docSection && !docSection.classList.contains("expand")) {
+    docSection.classList.add("expand");
+  }
+}
